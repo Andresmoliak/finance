@@ -1,0 +1,68 @@
+.swiper-arrows{
+    display: flex;
+    gap: 10px;
+}
+.swiper-arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: solid 1px #0D2C54;
+    transition: .2s ease-in-out;
+    @media (hover: hover){
+        &:hover{
+            transition: .2s ease-in-out;
+            background-color: #0D2C54;
+            border: solid 1px #FFFFFF;
+            svg{
+                fill: white;
+                transition: .2s ease-in-out;
+            }
+        }
+    }}
+.tourist-destination__item{
+    background-color: #F4F4F4;
+    min-height: 310px;
+p{
+        @include standart-style;
+        line-height: 27px;
+        padding: 94px 38px 20px 38px;
+    }
+}
+.swiper-slide img{
+    width: 56px;
+    height: 36px;
+    position: absolute;
+    left: 38px;
+    top: 37px;
+}
+@media(max-width: 1050px){
+    .tourist-destination__item{
+        background-color: #F4F4F4;
+        min-height: 434px;
+    }
+}
+@media(max-width: 800px){
+    .swiper-slide img{
+        top: calc(35px + (37 - 35) * ((100vw - 320px) / (800 - 320)));
+        left: calc(35px + (38 - 35) * ((100vw - 320px) / (800 - 320)));
+        width: calc(48px + (56 - 48) * ((100vw - 320px) / (800 - 320)));
+        height: calc(30px + (36 - 30) * ((100vw - 320px) / (800 - 320)));
+    }
+    .patterns__top-left{
+        display: none;
+    }
+    .patterns__top-right{
+        display: none;
+    }
+    .patterns-bottom__right{
+        display: none;
+    }
+    .patter-bottom__left{
+        display: none;
+    }
+}

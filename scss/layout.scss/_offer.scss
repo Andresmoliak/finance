@@ -1,0 +1,70 @@
+.offer{
+    background-color: #0D2C54;
+    padding-top: calc(64px + (148 - 64) * ((100vw - 360px) / (1280 - 360)));
+    padding-bottom: calc(64px + (166 - 64) * (100vw - 360px) / (1280 - 360));
+    .offer-content{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 1040px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    h2{
+        @include standart-title;
+        color: #FFFFFF;
+        @media(max-width: 1280px){
+            font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 360px) / 1280);
+        }
+    }
+    p{
+        @include standart-style;
+        color: #FFFFFF;
+        max-width: 509px;
+    }
+    .offer-text{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-right: 15px;
+        @media(max-width: 1040px){
+            padding-bottom: 48px;
+            padding-right: 0;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    input{
+        font-family: $Inter;
+        color: #FFFFFF;
+        font-size: 16px;
+        letter-spacing: 1px;
+        background-color: transparent;
+        width: calc(310px + (610 - 310) * ((100vw - 320px) / (1280 - 320)));
+        padding: 23px 31px;
+        border: 1px solid #FFFFFF;
+        outline:none;
+        &::placeholder {
+            color: #BABABA;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    }
+    input[type=submit]{
+        font-weight: 500;
+        @include standart-style;
+        background-color: #FFFFFF;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+        @media(hover: hover){
+            &:hover{
+                transition: .2s ease-in-out;
+                color: #FFFFFF;
+                background-color: $text-color;
+            }
+        }
+    }
+}

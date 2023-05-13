@@ -1,0 +1,68 @@
+//fonts 
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Italic.woff2') format('woff2'),
+        url('../fonts/Inter-Italic.woff') format('woff'),
+        url('../fonts/Inter-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff'),
+        url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+//abstracts
+@import '../scss/abstracts.scss/vars';
+@import '../scss/abstracts.scss/constants';
+@import '../scss/abstracts.scss/mixins';
+
+//libs 
+@import '../libs/normilize.css';
+
+//layout
+@import '../scss/layout.scss/common';
+@import '../scss/layout.scss/header';
+@import '../scss/layout.scss/footer';
+@import '../scss/layout.scss/finance';
+@import '../scss/layout.scss/our-team';
+@import '../scss/layout.scss/reviews';
+@import '../scss/layout.scss/our-busines';
+@import '../scss/layout.scss/why-we';
+@import '../scss/layout.scss/tourist-destination';
+@import '../scss/layout.scss/safety';
+@import '../scss/layout.scss/offer';
+@import '../scss/layout.scss/our-offers';
+@import '../scss/layout.scss/advantages';
+@import '../scss/layout.scss/investments';
+@import '../scss/layout.scss/income';
+@import '../scss/layout.scss/contacts';
+@import '../scss/layout.scss/modal.scss';
+@import '../scss/layout.scss/table-modal.scss'

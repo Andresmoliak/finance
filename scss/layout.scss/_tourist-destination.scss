@@ -1,0 +1,195 @@
+.tourist-destination {
+   position: relative;
+   padding-bottom: 149px;
+   overflow: hidden;
+
+   .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 250px;
+      padding-bottom: 96px;
+      position: relative;
+   }
+
+   .tourist-destination__slider-buttons {
+      width: 150px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      .swiper-button-prev {
+         width: 70px;
+         height: 70px;
+         position: static;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         transform: rotate(180deg);
+         border: 1px solid #0D2C54;
+         margin: 0;
+
+         &::after {
+            display: none;
+         }
+
+         svg {
+            fill: #0D2C54;
+         }
+
+         &:active {
+            background-color: #0D2C54;
+
+            svg {
+               fill: #FFFFFF;
+            }
+         }
+      }
+
+      .swiper-button-next {
+         width: 70px;
+         height: 70px;
+         position: static;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border: 1px solid #0D2C54;
+         margin: 0;
+
+         &::after {
+            display: none
+         }
+
+         svg {
+            fill: #0D2C54;
+         }
+
+         &:active {
+            background-color: #0D2C54;
+
+            svg {
+               fill: #FFFFFF;
+            }
+         }
+      }
+
+   }
+
+   h2 {
+      @include standart-title;
+   }
+
+   .patterns-bottom__left {
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+   }
+
+   .patterns-bottom__right {
+      position: absolute;
+      bottom: -70px;
+      right: 0;
+   }
+}
+
+.tourist-destination__slider {
+   display: flex;
+   cursor: grab;
+   justify-content: center;
+   position: relative;
+   align-items: center;
+}
+
+@media(hover:hover) {
+   .tourist-destination {
+      .tourist-destination__slider-buttons {
+
+         .swiper-button-prev:hover,
+         .swiper-button-next:hover {
+            transition: .2s ease-in-out;
+            background-color: #0D2C54;
+            border: solid 1px #FFFFFF;
+
+            svg {
+               fill: white;
+               transition: .2s ease-in-out;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 1280px) {
+   .tourist-destination {
+      .container {
+         padding: 0px 15px;
+      }
+
+      .title {
+         gap: 50px;
+         justify-content: center;
+         padding-bottom: calc(66px + (96 - 66) * ((100vw - 1100px) / (1280 - 110)));
+      }
+
+      h2 {
+         font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 360px) / 1280);
+      }
+   }
+}
+
+@media(max-width: 1100px) {
+   .tourist-destination {
+      padding-bottom: 250px;
+
+      .title {
+         position: static;
+      }
+
+      .tourist-destination__slider-buttons {
+         position: absolute;
+         width: 500px;
+         gap: 360px;
+         bottom: 150px;
+         top: auto;
+         left: calc(50% - 250px);
+      }
+   }
+}
+
+@media(max-width: 1050px) {
+   .tourist-destination {
+      padding-bottom: calc(150px + (250 - 150) * ((100vw - 800px) / (1050 - 800)));
+
+      .tourist-destination__slider-buttons {
+         bottom: calc(50px + (150 - 50) * ((100vw - 800px) / (1050 - 800)));
+      }
+   }
+}
+
+@media(max-width: 800px) {
+   .tourist-destination {
+      padding-bottom: 150px;
+
+      .tourist-destination__slider-buttons {
+         width: calc(330px + (500 - 330) * ((100vw - 360px) / (800 - 360)));
+         bottom: 65px;
+         left: calc(50% - calc(165px + (250 - 165) * ((100vw - 360px) / (800 - 360))));
+         gap: calc(90px + (360 - 90) * ((100vw - 360px) / (800 - 360)));
+      }
+   }
+}
+
+@media(max-width: 360px) {
+   .tourist-destination {
+      .tourist-destination__slider-buttons {
+         width: calc(290px + (330 - 290) * ((100vw - 320px) / (360 - 320)));
+         left: calc(50% - calc(145px + (165 - 145) * ((100vw - 320px) / (360 - 320))));
+      }
+
+      .tourist-destination__item {
+         min-height: 519px;
+      }
+   }
+}

@@ -1,0 +1,54 @@
+.income{
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(64px + 53 * (100vw - 360px) / (1280 - 360));
+    padding-bottom: calc(64px + 53 * (100vw - 360px) / (1280 - 360));
+    h2{
+        @include standart-title;
+        max-width: 1000px;
+        padding-bottom: calc(44px + (80 - 44) * (100vw - 360px) / (1280 - 360));
+        font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 360px) / 1280);
+    }
+    p{
+        @include standart-style;
+    }
+    .title{
+        padding-bottom: calc(44px + (80 - 44) * (100vw - 360px) / (1280 - 360));
+    }
+    .table-title_mobile{
+        display: none;
+        @media(max-width: 900px){
+            display: block;
+        }
+    }
+    .table-title{
+        display: block;
+        @media(max-width: 900px){
+            display: none;
+        }
+    }
+    img{
+        cursor: pointer;
+        width: calc(280px + (330 - 310) * ((100vw - 320px) / (360 - 320)));
+        display: block;
+        margin: 0 auto;
+    }
+    .patterns-bottom__left{
+        position: absolute;
+        max-width: 180px;
+        bottom: -92px;
+        left: 0;
+        @media(max-width: 800px){
+            display: none;
+        }
+     }
+     .patterns-bottom__right{
+        position: absolute;
+        bottom: -112px;
+        max-width: 180px;
+        right: 0;
+        @media(max-width: 800px){
+            display: none;
+        }
+     }
+}

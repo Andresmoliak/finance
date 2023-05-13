@@ -1,0 +1,113 @@
+footer {
+    background-color: #FAFAFA;
+    .nav-item+.nav-item {
+        padding-top: 24px;
+    }
+    @media(max-width: 850px){
+        padding: 64px 0 64px 0;
+    }
+    .footer__wrapper-desktop {
+        display: flex;
+        justify-content: space-between;
+        padding: 148px 0 89px 0;
+        @media(max-width: 850px){
+            display: none;
+        }
+    }
+    address {
+        @include standart-style;
+        padding-top: 24px;
+        @media(max-width: 850px){
+            padding-top: 48px;
+            padding-bottom: 36px;
+            max-width: 287px;
+        }
+    }
+    }
+    .footer__logo-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer__copyright {
+        @include standart-style;
+    }
+
+    .footer-information {
+        display: flex;
+        gap: 127px;
+    }
+
+    .nav__link {
+        @include standart-style;
+    }
+
+    .footer__contacts-list {
+        max-width: 270px;
+    }
+
+    .footer__contacts-item {
+        @include standart-style;
+    }
+
+    .footer__contacts-item+.footer__contacts-item {
+        padding-top: 24px;
+        @media(max-width: 850px){
+            padding-top: 0;
+        }
+    }
+
+    .link-phone {
+        margin-left: 31px;
+        @include standart-style;
+        font-weight: 500;
+    }
+
+    .link-fax {
+        margin-left: 17px;
+        @include standart-style;
+        font-weight: 500;
+    }
+
+    .link-email {
+        margin-left: 12px;
+        @include standart-style;
+        font-weight: 500;
+    }
+
+    .footer-mobile{
+        display: none;
+        @media(max-width: 850px){
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media(max-width: 400px){
+            align-items: flex-start;
+        }
+        h3{
+            @include standart-title;
+            font-size: 30px;
+        }
+        img{
+            display: block;
+            margin-bottom: 36px;
+        }
+        iframe{
+            width: 330px;
+            height: 250px;
+            padding: 48px 0 48px 0;
+            @media(max-width: 355px){
+                width: 280px;
+                height: 200px;
+            }
+        }
+         .nav-list{
+            display: flex;
+            justify-content: space-between;
+         }
+         .footer-nav-right{
+            padding-left: 60px;
+         }}

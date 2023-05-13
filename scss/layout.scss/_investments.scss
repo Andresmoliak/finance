@@ -1,0 +1,28 @@
+.investments{
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2{
+        display: none;
+    }
+    .investments__wrapper{
+        display: flex;
+        justify-content: center;
+        padding-top: calc(64px + (148 - 64) * (100vw - 360px) / (1280 - 360));
+        padding-bottom: calc(64px + (148 - 64) * (100vw - 360px) / (1280 - 360));
+    }
+    .investments__content{
+            background-color: #FFFFFF;
+            display: block;
+            max-width: 1030px;
+            padding: calc(35px + (85 - 35) * (100vw - 360px) / (1280 - 360));
+            p{
+                display: block;
+                max-width: 840px;
+                text-align: left;
+                @include standart-style;
+            }
+            p + p {
+                padding-top: calc(35px + (48 - 35) * (100vw - 360px) / (1280 - 360));;
+            }
+        }
+}
