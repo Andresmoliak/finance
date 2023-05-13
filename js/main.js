@@ -236,7 +236,7 @@ const table = document.querySelector('.income img')
 const back = document.querySelector('.table-enlarged-back')
 const windowWidth = document.documentElement.clientWidth
 const windowHeight = document.documentElement.clientHeight
-
+console.log(table)
 
 if(windowWidth <= 900 && table !== null){
     table.addEventListener('click', tableAction)
@@ -252,7 +252,6 @@ function tableClose() {
 function tableAction(){
     let tableWidth = table.offsetWidth
     const difference = 1.102
-    console.log(4)
     if(windowHeight < windowWidth * 0.95 * difference){
         let ready = `${(windowWidth * 0.95 / ((windowWidth * 0.95 * difference) / windowHeight))}`
         table.style.width = `${ready}px`
