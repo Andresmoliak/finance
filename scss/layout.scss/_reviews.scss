@@ -16,7 +16,8 @@
         position: absolute;
         bottom: -73px;
         left: 0;
-        @media(max-width: 800px){
+
+        @media(max-width: 800px) {
             display: none;
         }
     }
@@ -25,7 +26,8 @@
         position: absolute;
         bottom: -73px;
         right: 0;
-        @media(max-width: 800px){
+
+        @media(max-width: 800px) {
             display: none;
         }
     }
@@ -34,12 +36,15 @@
 .reviews__content {
     margin: 0px 0px 96px 340px
 }
-.scroll-slide{
+
+.scroll-slide {
     display: none;
-    @media(max-width: 775px){
+
+    @media(max-width: 775px) {
         top: 75px;
     }
 }
+
 .reviews__slider {
     overflow: visible;
     position: relative;
@@ -85,6 +90,7 @@
     .swiper-button-next::after {
         display: none;
     }
+
     .swiper-button-prev:active,
     .swiper-button-next:active {
         background-color: #0D2C54;
@@ -107,6 +113,7 @@
     align-items: flex-start;
     gap: 36px;
 }
+
 .reviews__slide__title {
     display: flex;
     justify-content: left;
@@ -116,6 +123,8 @@
     img {
         width: 70px;
         height: 70px;
+
+        position: static;
         border-radius: 50%;
     }
 
@@ -128,82 +137,97 @@
     }
 }
 
-.reviews__slide__content{
+.reviews__slide__content {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
 }
+
 .reviews__slider__slide.swiper-slide-active {
     opacity: 1;
 }
 
-@media(hover:hover){
+@media(hover:hover) {
+
     .swiper-button-prev:hover,
     .swiper-button-next:hover {
         transition: .2s ease-in-out;
-            background-color: #0D2C54;
-            border: solid 1px #FFFFFF;
-            svg{
-                fill: white;
-                transition: .2s ease-in-out;
-            }
+        background-color: #0D2C54;
+        border: solid 1px #FFFFFF;
+
+        svg {
+            fill: white;
+            transition: .2s ease-in-out;
+        }
+    }
 }
-}
-@media (max-width: 1900px){
+
+@media (max-width: 1900px) {
     .reviews__slider {
         .swiper-button-prev {
             left: calc(220px + (540 - 220) * ((100vw - 1280px) / (1920 - 1280)))
         }
+
         .swiper-button-next {
             right: calc(220px + (540 - 220) * ((100vw - 1280px) / (1920 - 1280)))
         }
     }
-    .reviews__content{
+
+    .reviews__content {
         margin-right: 20px;
         margin-left: calc(20px + (340 - 20) * ((100vw - 1280px) / (1920 - 1280)));
     }
 }
-@media(max-width: 1280px){
+
+@media(max-width: 1280px) {
     .reviews {
-        margin-top:calc(64px + (148 - 64) * ((100vw - 320px) / (1280 - 320)));
-    
+        margin-top: calc(64px + (148 - 64) * ((100vw - 320px) / (1280 - 320)));
+
         h2 {
             font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 320px) / 1280);
         }
     }
+
     .reviews__content {
         margin-right: calc(10px + (20 - 10) * ((100vw - 320px) / (1280 - 320)));
         margin-left: calc(10px + (20 - 10) * ((100vw - 320px) / (1280 - 320)));
     }
+
     .reviews__slider {
         margin-bottom: calc(64px + (148 - 64) * ((100vw - 320px) / (1280 - 320)));
+
         .swiper-button-prev {
             left: calc(180px + (220 - 180) * ((100vw - 1000px) / (1280 - 1000)))
         }
+
         .swiper-button-next {
             right: calc(180px + (220 - 180) * ((100vw - 1000px) / (1280 - 1000)))
         }
     }
-    
+
     .reviews__slider__slide {
         width: calc(400px + (600 - 400) * ((100vw - 1000px) / (1280 - 1000)));
         padding-top: calc(35px + (50 - 35) * ((100vw - 1000px) / (1280 - 1000)));
         padding-right: calc(35px + (39 - 35) * ((100vw - 320px) / (1280 - 320)));
-        padding-bottom: calc(35px + (50 - 35) * ((100vw - 1000px) / (1280 - 1000)));;
-        padding-left: calc(35px + (50 - 35) * ((100vw - 1000px) / (1280 - 1000)));;
+        padding-bottom: calc(35px + (50 - 35) * ((100vw - 1000px) / (1280 - 1000)));
+        ;
+        padding-left: calc(35px + (50 - 35) * ((100vw - 1000px) / (1280 - 1000)));
+        ;
     }
 }
 
-@media(max-width: 999px){
-    .reviews{
+@media(max-width: 999px) {
+    .reviews {
         position: relative;
     }
-    .reviews__content{
+
+    .reviews__content {
         margin-bottom: calc(48px + (96 - 48) * ((100vw - 320px) / (999 - 320)));
     }
-    .scroll-slide{
+
+    .scroll-slide {
         display: block;
         position: absolute;
         top: calc(75px + (105 - 75) * ((100vw - 320px) / (999 - 320)));
@@ -211,21 +235,25 @@
         width: 40px;
         height: 24px;
     }
+
     .reviews__slider {
         .swiper-button-prev {
             top: auto;
             bottom: 0px;
             left: calc(10px + (300 - 10) * ((100vw - 320px) / (999 - 320)))
         }
+
         .swiper-button-next {
             bottom: 0px;
             top: auto;
             right: calc(10px + (300 - 10) * ((100vw - 320px) / (999 - 320)))
         }
-        .reviews__slider__wrapper{
+
+        .reviews__slider__wrapper {
             margin-bottom: calc(90px + (100 - 90) * ((100vw - 320px) / (999 - 320)));
         }
     }
+
     .reviews__slider__slide {
         width: calc(310px + (400 - 310) * ((100vw - 320px) / (999 - 320)));
         padding: 35px;

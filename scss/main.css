@@ -718,6 +718,7 @@ footer address {
 .reviews__slide__title img {
   width: 70px;
   height: 70px;
+  position: static;
   border-radius: 50%;
 }
 .reviews__slide__title h3 {
